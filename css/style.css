@@ -1,0 +1,184 @@
+@import url(./reset.css);
+@import url(./10000hours.css);
+
+img {
+  display: block;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #5B2386;
+  font-family: 'GmarketSansMedium';
+}
+
+button {
+  cursor: pointer;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.sc-out {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.header {
+  margin-top: 50px;
+}
+
+.ico-title {
+  margin: 0 auto;
+  width: 267px;
+  height: 53px;
+  padding-top: 25px;
+}
+
+.header::before {
+  content: '';
+  display: block;
+  background-image: url(../img/clock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 106.13px;
+  height: 106.98px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.advice-tit {
+  font-family: 'OTEnjoystoriesBA';
+  font-size: 22px;
+  line-height: 24px;
+  color: #F5DF4D;
+  text-align: center;
+  margin-top: 69px;
+}
+
+.about-text {
+  position: relative;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  margin-top: 61px;
+}
+
+.about-text strong {
+  font-family: 'GmarketSansBold';
+}
+
+.about-text::before {
+  content: '';
+  display: block;
+  background: url(../img/quotes.png) no-repeat;
+  background-size: 370px;
+  background-position: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 480px;
+  height: 31px;
+}
+
+.input-section {
+  margin-top: 62px;
+  font-size: 14px;
+  line-height: 3;
+  color: #fff;
+}
+
+.input-section input {
+  font-family: 'GmarketSansMedium';
+  box-sizing: border-box;
+  width: 156px;
+  height: 37px;
+  background: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0 10px;
+}
+
+.input-section input::placeholder {
+  font-family: 'GmarketSansMedium';
+  color: #BABCBE;
+  text-align: center;
+}
+
+.getdays-btn {
+  font-size: 14px;
+  font-family: 'GmarketSansbold';
+  width: 241px;
+  padding: 19px 36.5px 17px;
+  border: none;
+  border-radius: 13px;
+  color: #5B2386;
+  background: #FCEE21;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 49px;
+}
+
+.result-text {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 64px;
+}
+
+.result-text strong {
+  font-family: 'GmarketSansbold';
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.btn-wrapper{
+  margin-top: 60px;
+}
+
+.btn-wrapper button{
+  font-family: 'GmarketSansbold';
+  font-size: 14px;
+  color: #5B2386;
+  border: none;
+  border-radius: 56px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-wrapper .go-btn {
+  padding: 13.5px 17.5px 12.5px;
+  background-color: #FCEE21;;
+}
+
+.btn-wrapper .share-btn {
+  padding: 13.5px 19px 12.5px;
+  margin-left: 13px;
+}
+
+.footer{
+  padding: 83px 0;
+}
+.ico-logo {
+  width: 91px;
+  height: 18px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+
+.footer span {
+  font-family: 'Noto Sans KR';
+  display: block;
+  width: 300px;
+  font-size: 9px;
+  line-height: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  margin: 0 auto;
+}
