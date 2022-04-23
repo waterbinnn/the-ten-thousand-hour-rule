@@ -75,6 +75,7 @@ button {
 
 .about-text strong {
   font-family: 'GmarketSansBold';
+  font-size: 16px;
 }
 
 .about-text::before {
@@ -96,9 +97,15 @@ button {
   line-height: 3;
   color: #fff;
 }
+.input-section p{
+  display: inline-block;
+}
 
+.input-section .input-sec .dis-block {
+  display: block;
+}
 .input-section input {
-  font-family: 'GmarketSansMedium';
+  font-size: 14px;
   box-sizing: border-box;
   width: 156px;
   height: 37px;
@@ -106,9 +113,10 @@ button {
   border: none;
   border-radius: 7px;
   padding: 0 10px;
+  margin: 0 4px;
 }
 
-.input-section input::placeholder {
+.input-section input::-webkit-input-placeholder {
   font-family: 'GmarketSansMedium';
   color: #BABCBE;
   text-align: center;
@@ -131,19 +139,21 @@ button {
   font-size: 14px;
   color: #fff;
   margin-top: 64px;
+  vertical-align: middle;
 }
 
 .result-text strong {
   font-family: 'GmarketSansbold';
   font-size: 24px;
   line-height: 1.5;
+  vertical-align: middle;
 }
 
-.btn-wrapper{
+.btn-wrapper {
   margin-top: 60px;
 }
 
-.btn-wrapper button{
+.btn-wrapper button {
   font-family: 'GmarketSansbold';
   font-size: 14px;
   color: #5B2386;
@@ -154,7 +164,8 @@ button {
 
 .btn-wrapper .go-btn {
   padding: 13.5px 17.5px 12.5px;
-  background-color: #FCEE21;;
+  background-color: #FCEE21;
+  ;
 }
 
 .btn-wrapper .share-btn {
@@ -162,9 +173,10 @@ button {
   margin-left: 13px;
 }
 
-.footer{
+.footer {
   padding: 83px 0;
 }
+
 .ico-logo {
   width: 91px;
   height: 18px;
@@ -181,4 +193,116 @@ button {
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
   margin: 0 auto;
+}
+
+@media screen and (min-width:786px) {
+
+  .ico-title {
+    width: 564px;
+    height: 112px;
+    padding-top: 62px;
+  }
+
+  .header::before {
+    width: 221.6px;
+    height: 225px;
+  }
+
+  .advice-tit {
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: 125px;
+  }
+
+
+  .about-text {
+    font-size: 18px;
+    line-height: 2;
+    margin-top: 61px;
+  }
+
+  .about-text strong {
+    font-size: 24px;
+  }
+
+  .about-text::before {
+    background-size: 493px;
+    width: 493px;
+  }
+
+  .input-section {
+    margin-top: 102px;
+    font-size: 24px;
+  }
+
+  .input-section .input-sec {
+    margin-top: 27px;
+  }
+
+  .input-section .input-sec .dis-block {
+    display: inline-block;
+  }
+
+  .input-section input {
+    width: 228px;
+    height: 57px;
+    margin: 0 17px;
+    font-size: 24px;
+    vertical-align: 2px;
+  }
+
+.getdays-btn {
+  font-size: 24px;
+  line-height: 24px;
+  width: 565px;
+  height: 66px;
+  padding: 21px 49px;
+  border-radius: 56px;
+  margin-top: 115px;
+}
+
+.result-text {
+  font-size: 24px;
+  margin-top: 147px;
+}
+
+.result-text strong {
+  font-family: 'GmarketSansbold';
+  font-size: 72px;
+  line-height: 2;
+}
+
+.btn-wrapper {
+  margin-top: 127px;
+}
+
+.btn-wrapper button {
+  font-size: 24px;
+}
+
+.btn-wrapper .go-btn {
+  padding: 21px 49px;
+}
+
+.btn-wrapper .share-btn {
+  padding: 21px 49px;
+  margin-left: 18px;
+}
+
+.ico-logo {
+  width: 125px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding: 130px 0 50px;
+}
+
+
+.footer span {
+  width: 365px;
+  font-size: 12px;
+  line-height: 18px;
+}
 }
