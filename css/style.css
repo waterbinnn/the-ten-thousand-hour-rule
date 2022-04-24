@@ -187,7 +187,7 @@ button {
 .footer span {
   font-family: 'Noto Sans KR';
   display: block;
-  width: 300px;
+  width: 400px;
   font-size: 9px;
   line-height: 13px;
   color: rgba(255, 255, 255, 0.7);
@@ -301,7 +301,7 @@ button {
 
 
 .footer span {
-  width: 365px;
+  width: 380px;
   font-size: 12px;
   line-height: 18px;
 }
