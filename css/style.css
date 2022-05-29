@@ -5,22 +5,7 @@ img {
   display: block;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  background: #5B2386;
-  font-family: 'GmarketSansMedium';
-}
-
-button {
-  cursor: pointer;
-}
-
-.wrapper {
-  text-align: center;
-}
-
-.sc-out {
+.sr-out {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -30,29 +15,68 @@ button {
   overflow: hidden;
 }
 
-.header {
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #5B2386;
+  font-family: 'GmarketSansMedium';
+}
+
+button {
+  display: flex;
+  align-items: center;
+  font-family: 'GmarketSansBold';
+  font-size: 20px;
+  color: #5B2386;
+  background-color: #FCEE21;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 40px;
+  cursor: pointer;
+  word-break: keep-all;
+}
+
+
+@keyframes rotate {
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#contents {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   margin-top: 50px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ico-clock {
+  position: relative;
+  width: 130px;
+  height: 130px;
 }
 
 .ico-title {
-  margin: 0 auto;
-  width: 267px;
-  height: 53px;
-  padding-top: 25px;
+  position: absolute;
+  width: 282px;
 }
 
-.header::before {
-  content: '';
-  display: block;
-  background-image: url(../img/clock.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 106.13px;
-  height: 106.98px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+.ico-title img {
+  width: 100%;
+  height: auto;
 }
 
 .advice-tit {
@@ -61,7 +85,7 @@ button {
   line-height: 24px;
   color: #F5DF4D;
   text-align: center;
-  margin-top: 69px;
+  margin-top: 30px;
 }
 
 .about-text {
@@ -70,7 +94,7 @@ button {
   line-height: 1.5;
   text-align: center;
   color: #fff;
-  margin-top: 61px;
+  margin-top: 60px;
 }
 
 .about-text strong {
@@ -88,22 +112,20 @@ button {
   left: 50%;
   transform: translate(-50%, 50%);
   width: 480px;
-  height: 31px;
+  height: 30px;
 }
 
 .input-section {
-  margin-top: 62px;
+  margin: 62px auto 62px;
   font-size: 14px;
-  line-height: 3;
+  line-height: 30px;
   color: #fff;
 }
-.input-section p{
-  display: inline-block;
+
+.dis-block:last-of-type {
+  margin-top: 30px;
 }
 
-.input-section .input-sec .dis-block {
-  display: block;
-}
 .input-section input {
   font-size: 14px;
   box-sizing: border-box;
@@ -122,7 +144,26 @@ button {
   text-align: center;
 }
 
-.getdays-btn {
+.start {
+  display: flex;
+  justify-content: center;
+}
+
+.start .btn-wrap {
+  position: relative;
+}
+
+.start .ico-click {
+  position: absolute;
+  right: -50px;
+  bottom: 0px;
+}
+
+.start .ico-click img {
+  width: 40px;
+}
+
+.start-btn {
   font-size: 14px;
   font-family: 'GmarketSansbold';
   width: 241px;
@@ -132,59 +173,127 @@ button {
   color: #5B2386;
   background: #FCEE21;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  margin-top: 49px;
 }
 
-.result-text {
-  font-size: 14px;
-  color: #fff;
-  margin-top: 64px;
-  vertical-align: middle;
+.result-loading {
+  display: none;
+  margin-top: 100px;
+  justify-content: center;
 }
 
-.result-text strong {
+.result-loading .img-wrap {
+  width: 100px;
+  height: 100px;
+}
+
+.result-loading .img-wrap img {
+  width: 100%;
+  height: auto;
+  animation: rotate 1.1s infinite linear;
+}
+
+.result {
+  margin-top: 50px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+  color: rgb(255, 238, 0);
+}
+
+.result .result-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result strong {
   font-family: 'GmarketSansbold';
-  font-size: 24px;
+  font-size: 44px;
   line-height: 1.5;
   vertical-align: middle;
+  color: aliceblue;
 }
 
-.btn-wrapper {
+.buttons {
+  display: flex;
+  justify-content: center;
   margin-top: 60px;
 }
 
-.btn-wrapper button {
-  font-family: 'GmarketSansbold';
-  font-size: 14px;
-  color: #5B2386;
-  border: none;
-  border-radius: 56px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.btn-wrapper .go-btn {
+.buttons .btn-go {
   padding: 13.5px 17.5px 12.5px;
   background-color: #FCEE21;
   ;
 }
 
-.btn-wrapper .share-btn {
+.buttons .btn-share {
   padding: 13.5px 19px 12.5px;
   margin-left: 13px;
+  background-color: #fff;
 }
 
-.footer {
+#modal {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+#modal .modal-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#modal .cheer {
+  font-family: 'OTEnjoystoriesBA';
+  color: #5B2386;
+  text-align: center;
+}
+
+#modal h1 {
+  font-size: 30px;
+}
+
+#modal h3 {
+  font-size: 20px;
+}
+
+#modal .btn-close {
+  box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 15%);
+  margin-bottom: 30px;
+}
+
+#modal .btn p {
+  color: #747474;
+  font-size: 13px;
+  text-align: center;
+}
+
+#copyright {
   padding: 83px 0;
 }
 
-.ico-logo {
+#copyright .ico-logo {
   width: 91px;
   height: 18px;
   margin: 0 auto;
   margin-bottom: 17px;
 }
 
-.footer span {
+#copyright span {
   font-family: 'Noto Sans KR';
   display: block;
   width: 317px;
@@ -195,23 +304,21 @@ button {
   margin: 0 auto;
 }
 
+
 @media screen and (min-width:786px) {
+
+  .ico-clock {
+    width: 265px;
+    height: 265px;
+  }
 
   .ico-title {
     width: 564px;
-    height: 112px;
-    padding-top: 62px;
-  }
-
-  .header::before {
-    width: 221.6px;
-    height: 225px;
   }
 
   .advice-tit {
     font-size: 36px;
     line-height: 40px;
-    margin-top: 125px;
   }
 
 
@@ -228,10 +335,10 @@ button {
   .about-text::before {
     background-size: 493px;
     width: 493px;
+    height: 50px;
   }
 
   .input-section {
-    margin-top: 102px;
     font-size: 24px;
   }
 
@@ -251,58 +358,75 @@ button {
     vertical-align: 2px;
   }
 
-.getdays-btn {
-  font-size: 24px;
-  line-height: 24px;
-  width: 565px;
-  height: 66px;
-  padding: 21px 49px;
-  border-radius: 56px;
-  margin-top: 115px;
-}
+  .start-btn {
+    font-size: 24px;
+    line-height: 24px;
+    width: 565px;
+    height: 66px;
+    padding: 21px 49px;
+    border-radius: 56px;
+  }
 
-.result-text {
-  font-size: 24px;
-  margin-top: 147px;
-}
+  .result {
+    font-size: 24px;
+    margin-top: 100px;
+  }
 
-.result-text strong {
-  font-family: 'GmarketSansbold';
-  font-size: 72px;
-  line-height: 2;
-}
+  .result strong {
+    font-family: 'GmarketSansbold';
+    font-size: 72px;
+    line-height: 2;
+  }
 
-.btn-wrapper {
-  margin-top: 127px;
-}
+  .buttons {
+    margin-top: 100px;
+  }
 
-.btn-wrapper button {
-  font-size: 24px;
-}
+  .buttons button {
+    font-size: 24px;
+  }
 
-.btn-wrapper .go-btn {
-  padding: 21px 49px;
-}
+  .buttons .go-btn {
+    padding: 21px 49px;
+  }
 
-.btn-wrapper .share-btn {
-  padding: 21px 49px;
-  margin-left: 18px;
-}
+  .buttons .share-btn {
+    padding: 21px 49px;
+    margin-left: 18px;
+  }
 
-.ico-logo {
-  width: 125px;
-  height: 25px;
-  margin-bottom: 20px;
-}
+  .ico-logo {
+    width: 125px;
+    height: 25px;
+    margin-bottom: 20px;
+  }
 
-.footer {
-  padding: 130px 0 50px;
-}
+  .start .ico-click {
+    position: absolute;
+    right: -75px;
+    bottom: -15px;
+  }
 
+  .start .ico-click img {
+    width: 64px;
+  }
 
-.footer span {
-  width: 380px;
-  font-size: 12px;
-  line-height: 18px;
-}
+  .copyright span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  #modal .modal-wrap {
+    width: 600px;
+    height: 600px;
+  }
+
+  #modal h1 {
+    font-size: 80px;
+  }
+
+  #modal h3 {
+    font-size: 30px;
+  }
+
 }
