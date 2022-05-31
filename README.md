@@ -4,7 +4,7 @@
 
 ## 개요
 
-- `HTML`,`CSS`, `JavaScript`로 반응형 웹 구현 
+- HTML, CSS, JavaScript 로 반응형 웹 구현 
 
 ## 주요 기능
 
