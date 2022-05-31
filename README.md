@@ -23,22 +23,22 @@
 
 ### - 웹버전 구현 화면
 
-<img width="500px" src="./img/웹버전.png" alt="웹버전 구현화면">
+<img width="500px" src="img/웹버전.png" alt="웹버전 구현화면">
 
 ### - 모바일버전 구현 화면
 
 <div>
-<img  width="350px" src="./img/모바일버전.png" alt="모바일버전 구현화면">
+<img  width="350px" src="img/모바일버전.png" alt="모바일버전 구현화면">
 </div>
 
 ### - 로딩이미지 구현 화면
 
 <div>
-<img  width="350px" src="./img/로딩이미지.png" alt="로딩이미지 구현화면">
+<img  width="350px" src="img/로딩이미지.png" alt="로딩이미지 구현화면">
 </div>
 
 ### - 모달창 구현 화면
 
 <div>
-<img  width="350px" src="./img/모달창.png" alt="모달창 구현화면">
+<img  width="350px" src="img/모달창.png" alt="모달창 구현화면">
 </div>
